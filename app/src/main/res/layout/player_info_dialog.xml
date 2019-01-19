@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpText">
+
+        <Button
+            android:id="@+id/dialogCloseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/raleway"
+            android:text="@string/close_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helpText"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/helpText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/raleway"
+        android:text="Your job as the spy is to gather as much information from other players to work out what the location is."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roleLayout"/>
+
+    <LinearLayout
+        android:id="@+id/locationLayout"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:fontFamily="@font/raleway_bold"
+            android:paddingEnd="10dp"
+            android:paddingStart="20dp"
+            android:text="@string/dialog_label1"
+            android:textAlignment="viewEnd"
+            android:textSize="22sp"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="260dp"/>
+
+        <TextView
+            android:id="@+id/dialogLocationText"
+            fontPath="fonts/Raleway-Medium.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:fontFamily="@font/raleway_light"
+            android:paddingEnd="20dp"
+            android:paddingStart="10dp"
+            android:text="Unknown"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="312dp"
+            tools:layout_editor_absoluteY="32dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/roleLayout"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationLayout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:fontFamily="@font/raleway_bold"
+            android:paddingEnd="10dp"
+            android:paddingStart="20dp"
+            android:text="@string/dialog_label2"
+            android:textAlignment="viewEnd"
+            android:textSize="22sp"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="260dp"/>
+
+        <TextView
+            android:id="@+id/dialogRoleText"
+            fontPath="fonts/Raleway-Medium.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:fontFamily="@font/raleway_light"
+            android:paddingEnd="20dp"
+            android:paddingStart="10dp"
+            android:text="Spy"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="312dp"
+            tools:layout_editor_absoluteY="32dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
